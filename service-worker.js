@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.74a292b243013aba65c524784579065b.js"
+  "/precache-manifest.c18d9705ee014110ed18578c24c3b0fb.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "poundbot"});
