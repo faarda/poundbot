@@ -303,7 +303,7 @@ export default {
     },
     getFact(num){
         this.showLoading();
-        axios.get(`http://numbersapi.com/${num}`)
+        axios.get(`https://cors-anywhere.herokuapp.com/http://numbersapi.com/${num}`)
             .then(data => {
                 let fact = data.data;
                 this.showMessage({

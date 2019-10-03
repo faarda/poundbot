@@ -40,7 +40,7 @@
         this.getPlace();
       },
       getPlace(){
-        axios.get(`http://api.mapbox.com/geocoding/v5/mapbox.places/${myLocation.lon},${myLocation.lat}.json?access_token=pk.eyJ1IjoiZmFhcmRhIiwiYSI6ImNrMTl5Z2JmbjA3dWwzZHBhd3R4aW9seDYifQ.E4r2RwW3GWuW4pWJgCfEgg`)
+        axios.get(`https://api.mapbox.com/geocoding/v5/mapbox.places/${myLocation.lon},${myLocation.lat}.json?access_token=pk.eyJ1IjoiZmFhcmRhIiwiYSI6ImNrMTl5Z2JmbjA3dWwzZHBhd3R4aW9seDYifQ.E4r2RwW3GWuW4pWJgCfEgg`)
           .then(data => {
             myLocation.place = data.data.features[1].place_name;
           }).catch(err => function(){
